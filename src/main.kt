@@ -1,9 +1,10 @@
 fun main()
 {
-//    print("Добро пожаловать в методическое пособие на языке Kotlin по задачнику Абрамяна!\nТут представлены задачи по всем модулям(Begin1 - b1) - синтаксис вызова задач из списка.")
-//    Begin1()
-//    Begin2()
-    Integer28()
+    print("Добро пожаловать в методическое пособие на языке Kotlin по задачнику Абрамяна!\nТут представлены задачи по всем модулям.\n(Begin1 - b1) - Пример внутреннего синтаксиса для вызова задач из списка.")
+    print("На данный момент доступны задачи:\nBegin1\nBegin2")
+    Begin1()
+    Begin2()
+//    Integer28()
 
 }
 
@@ -25,19 +26,19 @@ fun Begin2()
 
 
 
-fun Integer28()
-{
-
-    var K = (1..365).random()
-    println(K)
-
-    var N = (1..7).random() - 1
-    println(N)
-
-    var addDays = K + N
-
-    var day = addDays % K + 1
-
-    print(day)
-
-}
+//fun Integer28()
+//{
+//
+//    var K = (1..365).random()
+//    println(K)
+//
+//    var N = (1..7).random() - 1
+//    println(N)
+//
+//    var addDays = K + N
+//
+//    var day = addDays % K + 1
+//
+//    print(day)
+//
+//}
