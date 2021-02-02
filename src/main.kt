@@ -17,13 +17,7 @@ fun main()
         else -> println("Такой задачи нет!")
 
     }
-
-//    Integer28()
-
 }
-
-
-
 fun Begin1()
 {
 print("\nДана сторона квадрата a. Найти его периметр P = 4·a.\nВведите сторону квадрата а: ")
@@ -39,7 +33,6 @@ fun Begin2()
     print("Площадь квадрата со стороной а = $a: $Sqare\nДемонстрация завершена!\n")
 }
 fun Begin20()
-
 {
     var x1= readLine()!!.toDouble()
     var x2= readLine()!!.toDouble()
@@ -51,8 +44,8 @@ fun Begin20()
     println("Результат SPOW: $Spow")
 //(/*выражение*/).pow(0.5) = sqrt(/*выражение*/)
 }
-
-fun Integer11() {
+fun Integer11()
+{
 
     var num = readLine()!!.toInt()
     var num_sot = num/100       /*(num-num%100)/100*/
@@ -67,8 +60,6 @@ fun Integer11() {
 
 
 }
-
-
 fun If30()
 {
     var a = readLine()!!.toInt()
@@ -94,8 +85,6 @@ fun If30()
 
 
 }
-
-
 fun If30_1()
 {
     val n = 0
@@ -144,6 +133,11 @@ fun If30_1()
         }
     }
 }
+
+
+
+
+
 ///
 
 /* Найти расстояние между двумя точками с заданными координатами(x1,y1) и (x2,y2) на плоскости. Расстояние вычисляется по формуле√(x2−x1)2+ (y2−y1)2*/
