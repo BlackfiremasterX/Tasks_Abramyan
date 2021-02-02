@@ -11,6 +11,7 @@ fun main()
         "b1" -> Begin1()
         "b2" -> Begin2()
         "b20" -> Begin20()
+        "i11" -> Integer11()
         else -> println("Такой задачи нет!")
 
     }
@@ -18,6 +19,8 @@ fun main()
 //    Integer28()
 
 }
+
+
 
 fun Begin1()
 {
@@ -43,8 +46,21 @@ fun Begin20()
     var Spow = ((x2-x1).pow(2)+(y2-y1).pow(2)).pow(0.5)
     println("Результат: $S")
     println("Результат SPOW: $Spow")
-
 //(/*выражение*/).pow(0.5) = sqrt(/*выражение*/)
+}
+
+fun Integer11() {
+
+    var num = readLine()!!.toInt()
+    var num_sot = num/100       /*(num-num%100)/100*/
+    var num_dec = num/10%10
+    var num_edin = num%100%10
+    println(num_sot)
+    println(num_dec)
+    println(num_edin)
+
+    print("Сумма: ${num_sot+num_dec+num_edin}\n")
+    print("Произведение: ${num_sot*num_dec*num_edin}")
 
 
 }
