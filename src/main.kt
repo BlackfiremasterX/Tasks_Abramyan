@@ -12,6 +12,7 @@ fun main()
         "b2" -> Begin2()
         "b20" -> Begin20()
         "i11" -> Integer11()
+        "if30" -> If30()
         else -> println("Такой задачи нет!")
 
     }
@@ -37,6 +38,7 @@ fun Begin2()
     print("Площадь квадрата со стороной а = $a: $Sqare\nДемонстрация завершена!\n")
 }
 fun Begin20()
+
 {
     var x1= readLine()!!.toDouble()
     var x2= readLine()!!.toDouble()
@@ -61,6 +63,33 @@ fun Integer11() {
 
     print("Сумма: ${num_sot+num_dec+num_edin}\n")
     print("Произведение: ${num_sot*num_dec*num_edin}")
+
+
+}
+
+
+fun If30()
+{
+    var a = readLine()!!.toInt()
+    //если делиться на 2 значит чётное
+    if(a%2==0)
+    print("четное ")
+    else
+    print("нечетное ")
+    //однозначное,двухзначное,трёхзначное
+    if ((a/100)>0)
+        print("трёхзначное ")
+    else
+    {
+        if ((a/10)>0)
+            print("двухзначное ")
+        else
+            print("однозначное ")
+    }
+
+
+
+
 
 
 }
