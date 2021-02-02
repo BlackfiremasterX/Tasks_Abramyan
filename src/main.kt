@@ -13,6 +13,7 @@ fun main()
         "b20" -> Begin20()
         "i11" -> Integer11()
         "if30" -> If30()
+        "999" -> If30_1()
         else -> println("Такой задачи нет!")
 
     }
@@ -92,6 +93,56 @@ fun If30()
 
 
 
+}
+
+
+fun If30_1()
+{
+    val n = 0
+    while(n == 0)
+    {
+        print("Введите число в диапазоне от 1 до 999: "); val number = readLine()!!.toInt()
+
+        if (number >= 0 && number < 10)
+        {
+            if (number % 2 == 0)
+                println("Число $number является чётным однозначным")
+            else
+                println("Число $number является нечётным однозначным")
+        }
+        else if (number >= 10 && number < 100)
+        {
+            if (number % 2 == 0)
+                println("Число $number является чётным двузначным")
+            else
+                println("Число $number является нечётным двузначным")
+        }
+        else if (number >= 100 && number < 1000)
+        {
+            if (number % 2 == 0)
+                println("Число $number является чётным трёхзначным")
+            else
+                println("Число $number является нечётным трёхзначным")
+        }
+        else if (number < 1 || number > 999)
+        {
+            println("Внимательнее читайте условие")
+            break
+        }
+
+        println("Хотите продолжить? [да/нет]")
+        print("Ответ: "); var answer = readLine()!!.toString()
+
+        if (answer == "да" || answer == "Да" || answer == "lf" || answer == "Lf" || answer == "yes" || answer == "Yes")
+            continue
+        else if (answer == "нет" || answer == "Нет"  || answer == "Ytn" || answer == "ytn"  || answer == "No" || answer == "no")
+            break
+        else
+        {
+            println("Программа не может распознать ваш ответ. Выполнятеся аварийный выход")
+            break
+        }
+    }
 }
 ///
 
