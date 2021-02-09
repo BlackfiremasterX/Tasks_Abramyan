@@ -12,6 +12,7 @@ fun main()
         "b2" -> Begin2()
         "b20" -> Begin20()
         "i11" -> Integer11()
+        "i28" -> Integer28()
         "if30" -> If30()
         "999" -> If30_1()
         "666" -> fair()
@@ -169,7 +170,28 @@ fun fair()//иван горбунов
 }
 //
 
+fun Integer28()//Иван Горбунов
+{
+    val week_dayz_N = mapOf(
+            1 to "Понедельник",
+            2 to "Вторник",
+            3 to "Среда",
+            4 to "Четверг",
+            5 to "Пятница",
+            6 to "Суббота",
+            7 to "Воскресенье"
+    )
+    print("Введите день года который вы хотите узнать: ")
+    var K = readLine()!!.toInt()
+    print("Каким днем недели был первый день года(1 января)?: ")
+    var N = readLine()!!.toInt()
+    var user_choised_day = (K+N-1)%7
+    if(user_choised_day == 0){user_choised_day=user_choised_day+7}
+    print("День года $K был $user_choised_day\n")
+    print("День года $K был ${week_dayz_N[user_choised_day]}")
 
+
+}
 
 /////dfghjkl;
 
