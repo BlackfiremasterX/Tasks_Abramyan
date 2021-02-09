@@ -14,6 +14,7 @@ fun main()
         "i11" -> Integer11()
         "if30" -> If30()
         "999" -> If30_1()
+        "666" -> fair()
         else -> println("Такой задачи нет!")
 
     }
@@ -133,6 +134,40 @@ fun If30_1()
         }
     }
 }
+
+fun fair()//иван горбунов
+{
+
+    print("Эта программа решает квадратные уравнения.")
+    print("Введите a: ")
+    var ax2 = readLine()!!.toDouble()
+    print("Введите b: ")
+    var bx = readLine()!!.toDouble()
+    print("Введите c: ")
+    var c = readLine()!!.toDouble()
+    print("Уравнение имеет вид: $ax2*x2+($bx)*x+($c)=0\n")
+    var Discr = bx.pow(2)-4*ax2*c
+    print("Дискриминант = $Discr\n")
+    if(Discr < 0)
+    {
+        print("У данного уравнения нет корней!")
+    }
+
+    if(Discr == 0.0)
+    {
+        print("У данного уравнения ровно один корень!")
+        var x = -bx/2*ax2
+        print("Корень = $x")
+    }
+    if(Discr > 0)
+    {
+        print("У данного уравнения два корня!")
+        var x1 = (-bx+sqrt(Discr))/2*ax2
+        var x2 = (-bx-sqrt(Discr))/2*ax2
+        print("Корни равны...\nx1 = $x1\nx2 = $x2")
+    }
+}
+//
 
 
 
